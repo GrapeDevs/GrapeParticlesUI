@@ -40,6 +40,7 @@ class ParticleTask extends Task {
             $x = $player->getX();
 			$y = $player->getY();
 			$z = $player->getZ();
+		        $level = $player->getLevel();
             if (in_array($name, $this->plugin->waterdrip)) {
                 $center = new Vector3($x, $y, $z);
 				for($yaw = 0; $yaw <= 10; $yaw += (M_PI * 2) / 20) {
