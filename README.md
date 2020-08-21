@@ -7,6 +7,9 @@
 | ```gpui.waterdrip``` | Ability To Use Waterdrip Particle |
 | ```gpui.flame``` | Ability To Use Flame Particle|
 | ```gpui.heart``` | Ability To Use Hearts Particle |
+# Info
+- Use /grapepui to Open The Particles Menu
+- This plugin is still in dev, put issues in the issues tab above
 # License
 ```txt
     _____                      _____                 
