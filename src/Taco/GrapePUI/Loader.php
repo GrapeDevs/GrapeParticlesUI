@@ -77,8 +77,8 @@ class Loader extends PluginBase implements Listener {
                 return true;
             }
             switch($result) {
-                $name = $player->getName();
                 case 0:
+                    $name = $player->getName();
                     if (!$player->hasPermission("gpui.waterdrip")) {
                         $sender->sendMessage("§b[GrapeParticleUI]\n§aNo Permissions");
                         return true;
@@ -92,6 +92,7 @@ class Loader extends PluginBase implements Listener {
                     }
                     break;
                     case 1:
+                        $name = $player->getName();
                         if (!$player->hasPermission("gpui.flame")) {
                             $sender->sendMessage("§b[GrapeParticleUI]\n§aNo Permissions");
                             return true;
@@ -105,6 +106,7 @@ class Loader extends PluginBase implements Listener {
                         }
                         break;
                         case 2:
+                            $name = $player->getName();
                             if (!$player->hasPermission("gpui.heart")) {
                                 $sender->sendMessage("§b[GrapeParticleUI]\n§aNo Permissions");
                                 return true;
