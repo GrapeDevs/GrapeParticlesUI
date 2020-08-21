@@ -1,4 +1,4 @@
-name: GrapeParticlesUI
+name: GrapePUI
 api: "3.0.0"
 main: Taco\GrapePUI\Loader
 version: 1.0.0
