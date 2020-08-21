@@ -85,7 +85,7 @@ class Loader extends PluginBase implements Listener {
                     }
                     if (!in_array($name, $this->waterdrip)) {
                         $this->waterdrip[] = $name;
-                        $sender->sendMessage("§b[GrapeParticleUI]\n§aEnabled WaterDrip Particle");
+                        $player->sendMessage("§b[GrapeParticleUI]\n§aEnabled WaterDrip Particle");
                     }else{
                         unset($this->waterdrip[array_search($name, $this->waterdrip)]);
                         $sender->sendMessage("§b[GrapeParticleUI]\n§aDisabled WaterDrip Particle");
