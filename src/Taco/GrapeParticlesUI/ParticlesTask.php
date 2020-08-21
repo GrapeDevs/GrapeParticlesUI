@@ -30,7 +30,7 @@ use pocketmine\Server;
 use pocketmine\scheduler\Task;
 use pocketmine\utils\TextFormat;
 use pocketmine\math\Vector3;
-class ParticleTask extends Task {
+class ParticlesTask extends Task {
     public function __construct($plugin) {
 		$this->plugin = $plugin;
 	}
