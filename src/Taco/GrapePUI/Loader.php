@@ -72,6 +72,7 @@ class Loader extends PluginBase implements Listener {
         }
         $api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
         $form = $api->createSimpleForm(function (Player $player, int $data = null) {
+            $name = $player->getName();
             $result = $data;
             if ($result === null) {
                 return true;
