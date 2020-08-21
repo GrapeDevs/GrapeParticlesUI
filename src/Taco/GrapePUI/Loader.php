@@ -21,7 +21,7 @@ Copyright (C) 2020  GrapeDevs (github.com/GrapeDevs)
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
-namespace Taco\GrapeParticlesUI;
+namespace Taco\GrapePUI;
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
 use pocketmine\command\Command;
