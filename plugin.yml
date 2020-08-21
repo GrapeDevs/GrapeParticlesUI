@@ -1,0 +1,23 @@
+name: GrapeParticlesUI
+api: "3.0.0"
+main: Taco\GrapeParticlesUI\Loader
+version: 1.0.0
+author: Taco
+
+commands:
+  grapepui:
+    description: "§r§bGrapeParticles UI" 
+    
+permissions:
+ gpui.form:
+  description: "open form"
+  default: op
+  gpui.waterdrip:
+   description: "equip rainbow particle"
+   default: op
+   gpui.flame:
+    description: "equip flame particle"
+    default: op
+    gpui.heart:
+     description: "equip heart particle"
+     default: op
