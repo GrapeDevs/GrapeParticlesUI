@@ -21,7 +21,7 @@ Copyright (C) 2020  GrapeDevs (github.com/GrapeDevs)
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
-namespace Taco\GrapeParticlesUI;
+namespace Taco\GrapePUI;
 use pocketmine\level\particle\WaterDripParticle;
 use pocketmine\level\particle\FlameParticle;
 use pocketmine\level\particle\HeartParticle;
@@ -30,7 +30,7 @@ use pocketmine\Server;
 use pocketmine\scheduler\Task;
 use pocketmine\utils\TextFormat;
 use pocketmine\math\Vector3;
-class ParticlesTask extends Task {
+class ParticleTask extends Task {
     public function __construct($plugin) {
 		$this->plugin = $plugin;
 	}
