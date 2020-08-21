@@ -26,6 +26,7 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
 use pocketmine\command\Command;
 use pocketmine\command\CommandSender;
+use Taco\GrapePUI\ParticleTask;
 use pocketmine\Player;
 use jojoe77777\FormAPI;
 use jojoe77777\FormAPI\SimpleForm;
@@ -36,7 +37,7 @@ class Loader extends PluginBase implements Listener {
     public $hearts = array("hearts");
     public $name = array();
     public function onEnable() {
-        $this->getScheduler()->scheduleRepeatingTask(new ParticlesTask($this), 5);
+        $this->getScheduler()->scheduleRepeatingTask(new ParticleTask($this), 5);
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
     }
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool {
