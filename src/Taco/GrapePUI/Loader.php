@@ -94,29 +94,29 @@ class Loader extends PluginBase implements Listener {
                     case 1:
                         $name = $player;
                         if (!$player->hasPermission("gpui.flame")) {
-                            $sender->sendMessage("§b[GrapeParticleUI]\n§aNo Permissions");
+                            $player->sendMessage("§b[GrapeParticleUI]\n§aNo Permissions");
                             return true;
                         }
                         if (!in_array($name, $this->flame)) {
                             $this->flame[] = $name;
-                            $sender->sendMessage("§b[GrapeParticleUI]\n§aEnabled Flame Particle");
+                            $player->sendMessage("§b[GrapeParticleUI]\n§aEnabled Flame Particle");
                         }else{
                             unset($this->flame[array_search($name, $this->flame)]);
-                            $sender->sendMessage("§b[GrapeParticleUI]\n§aDisabled Flame Particle");
+                            $player->sendMessage("§b[GrapeParticleUI]\n§aDisabled Flame Particle");
                         }
                         break;
                         case 2:
                             $name = $player;
                             if (!$player->hasPermission("gpui.heart")) {
-                                $sender->sendMessage("§b[GrapeParticleUI]\n§aNo Permissions");
+                                $player->sendMessage("§b[GrapeParticleUI]\n§aNo Permissions");
                                 return true;
                             }
                             if (!in_array($name, $this->hearts)) {
                                 $this->hearts[] = $name;
-                                $sender->sendMessage("§b[GrapeParticleUI]\n§aEnabled Hearts Particle");
+                                $player->sendMessage("§b[GrapeParticleUI]\n§aEnabled Hearts Particle");
                             }else{
                                 unset($this->hearts[array_search($name, $this->hearts)]);
-                                $sender->sendMessage("§b[GrapeParticleUI]\n§aDisabled Hearts Particle");
+                                $player->sendMessage("§b[GrapeParticleUI]\n§aDisabled Hearts Particle");
                             }
                             break;
             }
