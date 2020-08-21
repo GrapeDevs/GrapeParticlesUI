@@ -36,7 +36,7 @@ class ParticleTask extends Task {
 	}
     public function onRun(int $tick) {
         foreach($this->plugin->getServer()->getOnlinePlayers() as $player) {
-            $name = $player->getName();
+            $name = $player;
             $x = $player->getX();
 			$y = $player->getY();
 			$z = $player->getZ();
