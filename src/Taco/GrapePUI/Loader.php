@@ -44,6 +44,7 @@ class Loader extends PluginBase implements Listener {
         $name = $sender->getName();
         switch ($command->getName()) {
             case "grapepui":
+                $name = $sender->getName();
                 if (!$sender->hasPermission("gpui.form")) {
                     $sender->sendMessage("§b[GrapeParticleUI]\n§aNo Permissions");
                     return true;
@@ -54,7 +55,6 @@ class Loader extends PluginBase implements Listener {
         return true;
     }
     public function openParticlesForm($player) {
-        $name = $player->getName();
         if ($player->hasPermission("gpui.waterdrip")) {
             $msg1 = "§aUNLOCKED";
         }else{
@@ -78,7 +78,7 @@ class Loader extends PluginBase implements Listener {
             }
             switch($result) {
                 case 0:
-                    $name = $player->getName();
+                    $name = $player;
                     if (!$player->hasPermission("gpui.waterdrip")) {
                         $sender->sendMessage("§b[GrapeParticleUI]\n§aNo Permissions");
                         return true;
@@ -92,7 +92,7 @@ class Loader extends PluginBase implements Listener {
                     }
                     break;
                     case 1:
-                        $name = $player->getName();
+                        $name = $player;
                         if (!$player->hasPermission("gpui.flame")) {
                             $sender->sendMessage("§b[GrapeParticleUI]\n§aNo Permissions");
                             return true;
@@ -106,7 +106,7 @@ class Loader extends PluginBase implements Listener {
                         }
                         break;
                         case 2:
-                            $name = $player->getName();
+                            $name = $player;
                             if (!$player->hasPermission("gpui.heart")) {
                                 $sender->sendMessage("§b[GrapeParticleUI]\n§aNo Permissions");
                                 return true;
