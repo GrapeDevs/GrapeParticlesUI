@@ -36,7 +36,7 @@ class Loader extends PluginBase implements Listener {
     public $hearts = array("hearts");
     public $name = array();
     public function onEnable() {
-        $this->getScheduler()->scheduleRepeatingTask(new ParticleTask($this), 5);
+        $this->getScheduler()->scheduleRepeatingTask(new ParticlesTask($this), 5);
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
     }
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args) : bool {
