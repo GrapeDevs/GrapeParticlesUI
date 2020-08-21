@@ -72,12 +72,12 @@ class Loader extends PluginBase implements Listener {
         }
         $api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
         $form = $api->createSimpleForm(function (Player $player, int $data = null) {
-            $name = $player->getName();
             $result = $data;
             if ($result === null) {
                 return true;
             }
             switch($result) {
+                $name = $player->getName();
                 case 0:
                     if (!$player->hasPermission("gpui.waterdrip")) {
                         $sender->sendMessage("§b[GrapeParticleUI]\n§aNo Permissions");
